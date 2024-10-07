@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    
+          <!--    SIDE BAR   -->
+
+    <div class="flex min-h-screen flex-no-wrap">
+          <div class="w-64 bg-gray-800 hidden md:block  ">
+             <div class=" flex justify-center items-center h-20 bg-gray-900">
+               <h1 class="text-white text-2xl "> Dashboard</h1>
+             </div>
+
+             <nav class="mt-10">
+                   <a href="#" class="flex items-center mt-4 py-2 px-6 bg-gray-700  text-gray-100 hover:text-gray-400">
+                    <span class="mx-3">Home</span>
+                   </a>
+                   <a href="#" class="flex items-center mt-4  py-2 px-6 hover:bg-gray-700  text-gray-100 hover:text-gray-400">
+                    <span class="mx-3">Analatics</span>
+                   </a>
+                   <a href="#" class="flex items-center mt-4  py-2 px-6 hover:bg-gray-700  text-gray-100 hover:text-gray-400">
+                    <span class="mx-3">Sales</span>
+                   </a>
+                   <a href="#" class="flex items-center mt-4  py-2 px-6 hover:bg-gray-700  text-gray-100 hover:text-gray-400">
+                    <span class="mx-3">Messeges</span>
+                   </a>
+             </nav>
+          </div>
+
+          <!--   MAIN CONTENT    -->
+             <div class="w-full flex flex-col">
+                <!--  NAV BAR   -->
+                  <header class="flex items-center bg-white px-4 h-16">
+                     <!--   SIDE BAR BUTTON   -->
+                     <button class=" md:hidden px-4 py-2 border rounded-md text-gray-400 border-gray-300  ">
+                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png" alt="" class="h-6 w-6 bg-cover ">
+                          
+                        </button>
+                     <div class="ml-auto flex items-center">
+                        <button class="flex items-center px-4 py-2 border rounded-md text-gray-600 border-gray-300">
+                             <span class="mr-2" >Sign out</span>
+                        </button>
+                     </div>
+                  </header>
+         <!--   CONTENT   -->
+
+         <main class="p-4 md:p-6">
+            <div class="flex flex-wrap gap-5">
+               <!--- CARD   -->
+               <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg min-w-[40%] transition-shadow duration-300 ease-in-out hover:shadow-none">
+                   <h3 class="text-xl font-semibold mb-4">Revenue</h3>
+                   <p class="text-gray-600 text-3xl " >$12,000</p>
+               </div>
+               <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg min-w-[40%] transition-shadow duration-300 ease-in-out hover:shadow-none">
+                  <h3 class="text-xl font-semibold mb-4">Users</h3>
+                  <p class="text-gray-600 text-3xl " >5461</p>
+               </div>
+               <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg min-w-[40%] transition-shadow duration-300 ease-in-out hover:shadow-none">
+                  <h3 class="text-xl font-semibold mb-4">Sales</h3>
+                  <p class="text-gray-600 text-3xl " >4512 Units</p>
+               </div>
+          
+            </div>
+
+
+            <div class="mt-8">
+               <div class="flex items-center justify-between">
+                  <h2 class="text-xl font-semibold text-gray-700">Recent Activities</h2>
+                  <button class="py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-800">View All</button>
+               </div>
+
+
+               <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg mt-4 overflow-x-auto">
+                  <table class="w-full">
+                     <thead>
+                        <tr class="text-left border-b ">
+                           <th class="py-2">Date</th>
+                           <th class="py-2">Activity</th>
+                           <th class="py-2">Status</th>
+                        </tr>
+                     </thead>
+
+                     <tbody>
+                        <tr class="border-b">
+                           <td class="py-2" >01/01/2024</td>
+                           <td class="py-2">Logged In</td>
+                           <td class="py-2 text-green-600">Completed</td>
+                        </tr>
+                        <tr class="border-b">
+                           <td class="py-2" >08/02/2024</td>
+                           <td class="py-2">Logged In</td>
+                           <td class="py-2 text-green-600">Completed</td>
+                        </tr>
+                        <tr class="border-b">
+                           <td class="py-2" >07/03/2024</td>
+                           <td class="py-2">Logged In</td>
+                           <td class="py-2 text-red-600">Pending</td>
+                        </tr>
+                        <tr class="border-b">
+                           <td class="py-2" >27/04/2024</td>
+                           <td class="py-2">Logged In</td>
+                           <td class="py-2 text-green-600">Completed</td>
+                        </tr>
+                     </tbody>
+                      
+                  </table>
+               </div>
+              
+               <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg h-64 mt-8">
+                  <h3 class="text-cl font-semibold mb-4">Activity feed</h3>
+
+                  <div class="overflow-y-scroll h-[80%]">
+                     <div class="flex items-center mb-4">
+                         <div class="w-10 h-10 rounded-full bg-blue-300 flex items-center justify-center">
+                           JD
+                         </div>
+                         <div class="ml-4">
+                           <p class="font-semibold" >John Dow</p>
+                           <p class="text-gray-600">Logged In</p>
+                         </div>
+                     </div>
+                     <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center">
+                          RV
+                        </div>
+                        <div class="ml-4">
+                          <p class="font-semibold" >Rohan Verma</p>
+                          <p class="text-gray-600">Logged In</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                     <div class="w-10 h-10 rounded-full bg-pink-300 flex items-center justify-center">
+                       PS
+                     </div>
+                     <div class="ml-4">
+                       <p class="font-semibold" >Priya Sen</p>
+                       <p class="text-gray-600">Pending</p>
+                     </div>
+                     
+                 </div>
+                  </div>
+               </div>
+
+            </div>
+         </main>
+         
+           </div>
+    </div>
+</body>
+</html>
